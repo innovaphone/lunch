@@ -12,6 +12,8 @@ You may use the code to build your own modified Lunch App with small modificatio
 
 ## Getting started
 
+Note that it's not possible to directly compile this project without modifications! You may use it to build your own App though.
+
 To compile an own binary out of this code, you would need to:
 
 - install the innovaphone SDK
