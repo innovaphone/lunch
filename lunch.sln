@@ -1,0 +1,44 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30225.117
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "lunch", "lunch.vcxproj", "{E0104876-BAB2-4678-BF5B-BA325726D66E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		arm64|Win32 = arm64|Win32
+		arm64-debug|Win32 = arm64-debug|Win32
+		arm|Win32 = arm|Win32
+		arm-debug|Win32 = arm-debug|Win32
+		x86_64|Win32 = x86_64|Win32
+		x86_64-debug|Win32 = x86_64-debug|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E0104876-BAB2-4678-BF5B-BA325726D66E}.arm64|Win32.ActiveCfg = arm64|Win32
+		{E0104876-BAB2-4678-BF5B-BA325726D66E}.arm64|Win32.Build.0 = arm64|Win32
+		{E0104876-BAB2-4678-BF5B-BA325726D66E}.arm64-debug|Win32.ActiveCfg = arm64-debug|Win32
+		{E0104876-BAB2-4678-BF5B-BA325726D66E}.arm64-debug|Win32.Build.0 = arm64-debug|Win32
+		{E0104876-BAB2-4678-BF5B-BA325726D66E}.arm|Win32.ActiveCfg = arm|Win32
+		{E0104876-BAB2-4678-BF5B-BA325726D66E}.arm|Win32.Build.0 = arm|Win32
+		{E0104876-BAB2-4678-BF5B-BA325726D66E}.arm-debug|Win32.ActiveCfg = arm-debug|Win32
+		{E0104876-BAB2-4678-BF5B-BA325726D66E}.arm-debug|Win32.Build.0 = arm-debug|Win32
+		{E0104876-BAB2-4678-BF5B-BA325726D66E}.x86_64|Win32.ActiveCfg = x86_64|Win32
+		{E0104876-BAB2-4678-BF5B-BA325726D66E}.x86_64|Win32.Build.0 = x86_64|Win32
+		{E0104876-BAB2-4678-BF5B-BA325726D66E}.x86_64-debug|Win32.ActiveCfg = x86_64-debug|Win32
+		{E0104876-BAB2-4678-BF5B-BA325726D66E}.x86_64-debug|Win32.Build.0 = x86_64-debug|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {176DCAA1-F975-47C5-934E-C9229358985A}
+	EndGlobalSection
+	GlobalSection(VaultVsipSolution-v2) = preSolution
+		VaultHost = https://vault.innovaphone.com/VaultService
+		VaultRepositoryID = 5
+		VaultRepositoryGUID = cee3f1c3-6458-4830-96fb-728c05908862
+		ProjectCount = 1
+		ProjectRelativeDiskPath1 = lunch.vcxproj
+	EndGlobalSection
+EndGlobal

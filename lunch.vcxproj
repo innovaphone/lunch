@@ -1,0 +1,1109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="arm64-debug|Win32">
+      <Configuration>arm64-debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="arm64|Win32">
+      <Configuration>arm64</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="arm-debug|Win32">
+      <Configuration>arm-debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="x86_64-debug|Win32">
+      <Configuration>x86_64-debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="x86_64|Win32">
+      <Configuration>x86_64</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="arm|Win32">
+      <Configuration>arm</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="common\ilib-cpp\asn1.cpp" />
+    <ClCompile Include="common\ilib-cpp\asn1_ber.cpp" />
+    <ClCompile Include="common\ilib-cpp\asn1_per.cpp" />
+    <ClCompile Include="common\ilib-cpp\base64.cpp" />
+    <ClCompile Include="common\ilib-cpp\btree.cpp" />
+    <ClCompile Include="common\ilib-cpp\cipher.cpp" />
+    <ClCompile Include="common\ilib-cpp\crc.cpp" />
+    <ClCompile Include="common\ilib-cpp\hash.cpp" />
+    <ClCompile Include="common\ilib-cpp\http_query_args.cpp" />
+    <ClCompile Include="common\ilib-cpp\ipaddr.cpp" />
+    <ClCompile Include="common\ilib-cpp\json.cpp" />
+    <ClCompile Include="common\ilib-cpp\lib.cpp" />
+    <ClCompile Include="common\ilib-cpp\str.cpp" />
+    <ClCompile Include="common\ilib-cpp\types.cpp" />
+    <ClCompile Include="common\ilib-cpp\uri.cpp" />
+    <ClCompile Include="common\ilib-cpp\xml.cpp" />
+    <ClCompile Include="common\ilib-cpp\zip.cpp" />
+    <ClCompile Include="lunch-main.cpp" />
+    <ClCompile Include="lunch\lunch.cpp" />
+    <ClCompile Include="lunch\lunch_tasks.cpp" />
+    <ClCompile Include="sdk\common\lib-cpp\apiwebsocket_client.cpp" />
+    <ClCompile Include="sdk\common\lib-cpp\appservice.cpp" />
+    <ClCompile Include="sdk\common\lib-cpp\appwebsocket.cpp" />
+    <ClCompile Include="sdk\common\lib-cpp\app_updates.cpp" />
+    <ClCompile Include="sdk\common\lib-cpp\asn1_io_buffer.cpp" />
+    <ClCompile Include="sdk\common\lib-cpp\badgecount_signaling.cpp" />
+    <ClCompile Include="sdk\common\lib-cpp\config.cpp" />
+    <ClCompile Include="sdk\common\lib-cpp\database_switch.cpp" />
+    <ClCompile Include="sdk\common\lib-cpp\dns_cache.cpp" />
+    <ClCompile Include="sdk\common\lib-cpp\dns_idna.cpp" />
+    <ClCompile Include="sdk\common\lib-cpp\httpfiles_unzip.cpp" />
+    <ClCompile Include="sdk\common\lib-cpp\httplib.cpp" />
+    <ClCompile Include="sdk\common\lib-cpp\idatabase.cpp" />
+    <ClCompile Include="sdk\common\lib-cpp\language.cpp" />
+    <ClCompile Include="sdk\common\lib-cpp\tasks_file.cpp" />
+    <ClCompile Include="sdk\common\lib-cpp\tasks_postgresql.cpp" />
+    <ClCompile Include="sdk\common\lib-cpp\tasks_sqlconsole.cpp" />
+    <ClCompile Include="sdk\common\lib-cpp\time_occurrence.cpp" />
+    <ClCompile Include="sdk\common\lib-cpp\transliterator.cpp" />
+    <ClCompile Include="sdk\common\lib-cpp\webdavservice.cpp" />
+    <ClCompile Include="sdk\common\linux\dns\dns.cpp" />
+    <ClCompile Include="sdk\common\linux\file\elfheader.cpp" />
+    <ClCompile Include="sdk\common\linux\file\file.cpp" />
+    <ClCompile Include="sdk\common\linux\os-cpp\debug.cpp" />
+    <ClCompile Include="sdk\common\linux\os-cpp\iomux.cpp" />
+    <ClCompile Include="sdk\common\linux\postgresql\psql_database.cpp" />
+    <ClCompile Include="sdk\common\linux\postgresql\psql_dataset.cpp" />
+    <ClCompile Include="sdk\common\linux\postgresql\psql_prepared_statement.cpp" />
+    <ClCompile Include="sdk\common\linux\process\process.cpp" />
+    <ClCompile Include="sdk\common\linux\system\system.cpp" />
+    <ClCompile Include="sdk\common\linux\tcp\tcpsocket.cpp" />
+    <ClCompile Include="sdk\common\linux\timezone\timezone.cpp" />
+    <ClCompile Include="sdk\common\linux\time\time.cpp" />
+    <ClCompile Include="sdk\common\linux\uds\udsocket.cpp" />
+    <ClCompile Include="sdk\common\linux\valgrind\valgrind.cpp" />
+    <ClCompile Include="sdk\common\service\http_client\http_client.cpp" />
+    <ClCompile Include="sdk\common\service\http_client\ntlm.cpp" />
+    <ClCompile Include="sdk\common\service\openssl_shared\ssl.cpp" />
+    <ClCompile Include="sdk\common\service\random\random.cpp" />
+    <ClCompile Include="sdk\common\service\smtp\smtp_service.cpp" />
+    <ClCompile Include="sdk\common\service\tls\tlssocket.cpp" />
+    <ClCompile Include="sdk\common\service\webserverplugin\httpfile.cpp" />
+    <ClCompile Include="sdk\common\service\webserverplugin\webserver_copy_handler.cpp" />
+    <ClCompile Include="sdk\common\service\webserverplugin\webserver_delete_handler.cpp" />
+    <ClCompile Include="sdk\common\service\webserverplugin\webserver_get_handler.cpp" />
+    <ClCompile Include="sdk\common\service\webserverplugin\webserver_lock_handler.cpp" />
+    <ClCompile Include="sdk\common\service\webserverplugin\webserver_message_handler.cpp" />
+    <ClCompile Include="sdk\common\service\webserverplugin\webserver_mkcol_handler.cpp" />
+    <ClCompile Include="sdk\common\service\webserverplugin\webserver_move_handler.cpp" />
+    <ClCompile Include="sdk\common\service\webserverplugin\webserver_options_handler.cpp" />
+    <ClCompile Include="sdk\common\service\webserverplugin\webserver_passthrough_handler.cpp" />
+    <ClCompile Include="sdk\common\service\webserverplugin\webserver_plugin.cpp" />
+    <ClCompile Include="sdk\common\service\webserverplugin\webserver_post_handler.cpp" />
+    <ClCompile Include="sdk\common\service\webserverplugin\webserver_propfind_handler.cpp" />
+    <ClCompile Include="sdk\common\service\webserverplugin\webserver_proppatch_handler.cpp" />
+    <ClCompile Include="sdk\common\service\webserverplugin\webserver_put_handler.cpp" />
+    <ClCompile Include="sdk\common\service\webserverplugin\webserver_set_certificate_handler.cpp" />
+    <ClCompile Include="sdk\common\service\webserverplugin\webserver_static_file.cpp" />
+    <ClCompile Include="sdk\common\service\webserverplugin\webserver_unlock_handler.cpp" />
+    <ClCompile Include="sdk\common\service\webserverplugin\webserver_websocket_handler.cpp" />
+    <ClCompile Include="sdk\common\service\webserver_shared\webserver_internal.cpp" />
+    <ClCompile Include="sdk\common\service\webserver_shared\webserver_message.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="build.bat" />
+    <None Include="common\build\build.mak" />
+    <None Include="common\ilib-cpp\ilib-cpp.mak" />
+    <None Include="common\ilib-cpp\ilib.mak" />
+    <None Include="common\ilib\asn1.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="common\ilib\asn1_ber.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="common\ilib\asn1_per.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="common\ilib\base64.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="common\ilib\btree.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="common\ilib\cipher.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="common\ilib\crc.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="common\ilib\hash.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="common\ilib\http_query_args.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="common\ilib\ilib.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="common\ilib\ilib.mak" />
+    <None Include="common\ilib\ilist.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="common\ilib\json.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="common\ilib\str.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="common\ilib\uri.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="common\ilib\xml.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="common\ilib\zip.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="lunch-arm-debug.vgdbsettings" />
+    <None Include="lunch-arm64-debug.vgdbsettings" />
+    <None Include="lunch-x86_64-debug.vgdbsettings" />
+    <None Include="lunch\apps\allergene.pdf" />
+    <None Include="lunch\apps\fruehstueck.pdf" />
+    <None Include="lunch\submodules.list" />
+    <None Include="lunch\submodules.mak" />
+    <None Include="lunch.mak" />
+    <None Include="lunch\apps\apps.mak" />
+    <None Include="lunch\apps\innovaphone-lunch.css" />
+    <None Include="lunch\apps\innovaphone-lunch.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="lunch\apps\innovaphone-lunch.js" />
+    <None Include="lunch\apps\innovaphone-lunchAdmin.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="lunch\apps\innovaphone-lunchAdmin.js" />
+    <None Include="lunch\apps\innovaphone-lunchTexts.js" />
+    <None Include="lunch\apps\innovaphone.lunchManager.css" />
+    <None Include="lunch\apps\innovaphone.lunchManager.js" />
+    <None Include="lunch\apps\innovaphone.lunchManagerTexts.js" />
+    <None Include="lunch\lunch.mak" />
+    <None Include="lunch_files" />
+    <None Include="sdk\common\interface\alarm_client.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="sdk\common\interface\appsharing.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="sdk\common\interface\appwebsocket_authenticator.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="sdk\common\interface\appwebsocket_client.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="sdk\common\interface\callback.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="sdk\common\interface\certificates.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="sdk\common\interface\command.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="sdk\common\interface\database.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="sdk\common\interface\dbfiles.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="sdk\common\interface\dns.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="sdk\common\interface\environment.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="sdk\common\interface\ethernet.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="sdk\common\interface\file.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="sdk\common\interface\files.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="sdk\common\interface\full_text_search.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="sdk\common\interface\guuid.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="sdk\common\interface\httpfile.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="sdk\common\interface\http_client.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="sdk\common\interface\interface.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="sdk\common\interface\json_api.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="sdk\common\interface\media.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="sdk\common\interface\network.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="sdk\common\interface\pbx.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="sdk\common\interface\pbx_admin.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="sdk\common\interface\pdf.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="sdk\common\interface\process.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="sdk\common\interface\random.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="sdk\common\interface\replication.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="sdk\common\interface\ringer.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="sdk\common\interface\services.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="sdk\common\interface\smtp.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="sdk\common\interface\socket.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="sdk\common\interface\stask.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="sdk\common\interface\sysclient.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="sdk\common\interface\system.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="sdk\common\interface\task.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="sdk\common\interface\time.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="sdk\common\interface\timezone.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="sdk\common\interface\translation.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="sdk\common\interface\users.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="sdk\common\interface\valgrind.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="sdk\common\interface\webserver_plugin.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="sdk\common\interface\websocket_client.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="sdk\common\interface\worker.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="sdk\common\lib-cpp\lib-cpp.mak" />
+    <None Include="sdk\common\lib-cpp\lib.mak" />
+    <None Include="sdk\common\lib\apiwebsocket_client.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="sdk\common\lib\appservice.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="sdk\common\lib\appwebsocket.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="sdk\common\lib\app_updates.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="sdk\common\lib\badgecount_signaling.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="sdk\common\lib\config.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="sdk\common\lib\database_switch.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="sdk\common\lib\httpfiles_unzip.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="sdk\common\lib\httplib.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="sdk\common\lib\language.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="sdk\common\lib\lib.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="sdk\common\lib\tasks_file.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="sdk\common\lib\tasks_postgresql.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="sdk\common\lib\time_occurrence.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="sdk\common\lib\transliterator.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="sdk\common\lib\webdavservice.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="sdk\common\lib\websocket_json.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="sdk\common\linux\dns\dns.mak" />
+    <None Include="sdk\common\linux\file\file.mak" />
+    <None Include="sdk\common\linux\os-cpp\os-cpp.mak" />
+    <None Include="sdk\common\linux\os-cpp\os.mak" />
+    <None Include="sdk\common\linux\postgresql\postgresql.mak" />
+    <None Include="sdk\common\linux\process\process.mak" />
+    <None Include="sdk\common\linux\system\system.mak" />
+    <None Include="sdk\common\linux\tcp\tcp.mak" />
+    <None Include="sdk\common\linux\timezone\timezone.mak" />
+    <None Include="sdk\common\linux\time\time.mak" />
+    <None Include="sdk\common\linux\uds\uds.mak" />
+    <None Include="sdk\common\linux\valgrind\valgrind.mak" />
+    <None Include="sdk\common\os\debug.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="sdk\common\os\iomux.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="sdk\common\service\http_client\http_client.mak" />
+    <None Include="sdk\common\service\openssl_shared\openssl_shared.mak" />
+    <None Include="sdk\common\service\openssl_shared\ssl.mak" />
+    <None Include="sdk\common\service\random\random.mak" />
+    <None Include="sdk\common\service\smtp\smtp.mak" />
+    <None Include="sdk\common\service\tls\tls.mak" />
+    <None Include="sdk\common\service\webserverplugin\webserverplugin.mak" />
+    <None Include="sdk\common\service\webserver_shared\webserver_shared.mak" />
+    <None Include="sdk\doc\ap.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="sdk\doc\appdevelopmentguide.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="sdk\doc\appgeneric.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="sdk\doc\appstoreguide.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="sdk\doc\appwebsocket\AppWebsocket.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="sdk\doc\appwebsocket\EpSignal.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="sdk\doc\appwebsocket\Messages.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="sdk\doc\appwebsocket\myApps.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="sdk\doc\appwebsocket\PbxAdminApi.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="sdk\doc\appwebsocket\PbxApi.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="sdk\doc\appwebsocket\PbxImpersonation.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="sdk\doc\appwebsocket\PbxMessages.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="sdk\doc\appwebsocket\PbxSignal.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="sdk\doc\appwebsocket\PbxTableUsers.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="sdk\doc\appwebsocket\RCC.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="sdk\doc\appwebsocket\Replication.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="sdk\doc\appwebsocket\Samples\AppWebsocket.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="sdk\doc\appwebsocket\Samples\AppWebsocket.js" />
+    <None Include="sdk\doc\appwebsocket\Samples\RCC.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="sdk\doc\appwebsocket\Samples\RCC.js" />
+    <None Include="sdk\doc\appwebsocket\Services.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="sdk\doc\appwebsocket\Signal.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="sdk\doc\architecture.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="sdk\doc\common.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="sdk\doc\copyright.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="sdk\doc\gettingstarted.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="sdk\doc\howto\AppStore.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="sdk\doc\javascript\AppInstance.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="sdk\doc\javascript\AppWebsocketClient.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="sdk\doc\javascript\Config.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="sdk\doc\javascript\Crypto.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="sdk\doc\javascript\Database.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="sdk\doc\javascript\Dns.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="sdk\doc\javascript\Encoding.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="sdk\doc\javascript\Global.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="sdk\doc\javascript\HttpClient.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="sdk\doc\javascript\JsonApi.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="sdk\doc\javascript\Network.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="sdk\doc\javascript\PbxApi.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="sdk\doc\javascript\Random.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="sdk\doc\javascript\Timers.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="sdk\doc\javascript\WebServer.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="sdk\doc\javascript\WebsocketClient.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="sdk\doc\launcher\Media.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="sdk\doc\launcher\Ringer.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="sdk\doc\licensing.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="sdk\doc\pbx\cdr.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="sdk\doc\pbx\recording.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="sdk\doc\pbx\soap.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="sdk\doc\pbx\textmedia.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="sdk\doc\pbx\textmedia\ibmwatson.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="sdk\doc\protocol\conference.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="sdk\doc\protocol\push.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="sdk\doc\protocol\sysclient.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="sdk\doc\reference.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="sdk\doc\sdk.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="sdk\doc\service\Channels.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="sdk\doc\service\Devices.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="sdk\doc\tutorials\ClientAPIs.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="sdk\doc\tutorials\DatabaseTutorial.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="sdk\doc\tutorials\ExternalAppService.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="sdk\doc\tutorials\HttpRequests.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="sdk\doc\tutorials\PhoneInfoApi.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="sdk\doc\tutorials\Provisioning API.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="sdk\doc\tutorials\RCC.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="sdk\doc\tutorials\RCCfromExternalWebPage.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="sdk\doc\tutorials\Replicator.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="sdk\doc\tutorials\SearchApiTutorial.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="sdk\doc\tutorials\tutorials.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="sdk\doc\tutorials\V15r1_V15r1_upgrade.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="sdk\platform\sdk-defs.mak" />
+    <None Include="sdk\platform\sdk-lib.mak" />
+    <None Include="sdk\platform\sdk.mak" />
+    <None Include="web1\appwebsocket\appwebsocket.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="web1\appwebsocket\appwebsocket.mak" />
+    <None Include="web1\appwebsocket\innovaphone.appwebsocket.Connection.js" />
+    <None Include="web1\com.innovaphone.autostart\com.innovaphone.autostart.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="web1\com.innovaphone.avatar\com.innovaphone.avatar.js" />
+    <None Include="web1\com.innovaphone.avatar\com.innovaphone.avatar.mak" />
+    <None Include="web1\com.innovaphone.avatar\lib1_api_avatar.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="web1\com.innovaphone.calllist\lib1_api_calllist.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="web1\com.innovaphone.chat\com.innovaphone.chat.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="web1\com.innovaphone.client\lib1_api_client.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="web1\com.innovaphone.devicesui\com.innovaphone.devicesui.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="web1\com.innovaphone.devices\com.innovaphone.devices.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="web1\com.innovaphone.discussion\com.innovaphone.discussion.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="web1\com.innovaphone.events\lib1_api_events.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="web1\com.innovaphone.files\com.innovaphone.files.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="web1\com.innovaphone.launcher\com.innovaphone.launcher.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="web1\com.innovaphone.manager\com.innovaphone.manager.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="web1\com.innovaphone.manager\pbx_manager_plugin.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="web1\com.innovaphone.phoneinfo\com.innovaphone.phoneinfo.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="web1\com.innovaphone.phonelookup\lib1_api_phonelookup.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="web1\com.innovaphone.phone\com.innovaphone.phone.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="web1\com.innovaphone.replicator\com.innovaphone.replicator.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="web1\com.innovaphone.search\lib1_api_search.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="web1\config\config.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="web1\config\config.mak" />
+    <None Include="web1\config\innovaphone.config.js" />
+    <None Include="web1\countries\countries.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="web1\countries\countries.mak" />
+    <None Include="web1\countries\innovaphone.countries.js" />
+    <None Include="web1\crypto\crypto.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="web1\crypto\crypto.mak" />
+    <None Include="web1\crypto\innovaphone.crypto.js" />
+    <None Include="web1\doc\highlight.pack.js" />
+    <None Include="web1\doc\innovaphone.doc.css" />
+    <None Include="web1\doc\sdk_doc_template_c.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="web1\doc\sdk_doc_template_json.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="web1\doc\vs.css" />
+    <None Include="web1\fonts\fonts.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="web1\fonts\fonts.mak" />
+    <None Include="web1\lib1\innovaphone.lib1.css" />
+    <None Include="web1\lib1\innovaphone.lib1.js" />
+    <None Include="web1\lib1\lib1.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="web1\lib1\lib1.mak" />
+    <None Include="web1\phonenumber\innovaphone.phonenumber.js" />
+    <None Include="web1\phonenumber\phonenumber.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="web1\phonenumber\phonenumber.mak" />
+    <None Include="web1\phpsession\innovaphone.phpsession.js" />
+    <None Include="web1\phpsession\phpsession.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="web1\phpsession\phpsession.mak" />
+    <None Include="web1\sqlconsole\innovaphone.sqlconsole.js" />
+    <None Include="web1\sqlconsole\sqlconsole.mak" />
+    <None Include="web1\test\innovaphone.test.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="web1\test\innovaphone.test.js" />
+    <None Include="web1\ui1.autocompleteinput\innovaphone.ui1.autocompleteinput.js" />
+    <None Include="web1\ui1.autocompleteinput\ui1.autocompleteinput.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="web1\ui1.autocompleteinput\ui1.autocompleteinput.mak" />
+    <None Include="web1\ui1.editor\innovaphone.ui1.editor.js" />
+    <None Include="web1\ui1.editor\test\basic.js" />
+    <None Include="web1\ui1.editor\test\run.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="web1\ui1.editor\test\test.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="web1\ui1.editor\test\test.js" />
+    <None Include="web1\ui1.editor\test\ul.js" />
+    <None Include="web1\ui1.editor\ui1.editor.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="web1\ui1.editor\ui1.editor.mak" />
+    <None Include="web1\ui1.file\innovaphone.ui1.file.js" />
+    <None Include="web1\ui1.file\ui1.file.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="web1\ui1.file\ui1.file.mak" />
+    <None Include="web1\ui1.lib\innovaphone.ui1.lib.js" />
+    <None Include="web1\ui1.lib\test.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="web1\ui1.lib\ui1.lib.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="web1\ui1.lib\ui1.lib.mak" />
+    <None Include="web1\ui1.listview\innovaphone.ui1.listview.js" />
+    <None Include="web1\ui1.listview\ui1.listview.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="web1\ui1.listview\ui1.listview.mak" />
+    <None Include="web1\ui1.player\innovaphone.ui1.player.js" />
+    <None Include="web1\ui1.player\ui1.player.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="web1\ui1.player\ui1.player.mak" />
+    <None Include="web1\ui1.popup\innovaphone.ui1.popup.js" />
+    <None Include="web1\ui1.popup\test.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="web1\ui1.popup\ui1.popup.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="web1\ui1.popup\ui1.popup.mak" />
+    <None Include="web1\ui1.radiobutton\innovaphone.ui1.radiobutton.js" />
+    <None Include="web1\ui1.radiobutton\ui1.radiobutton.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="web1\ui1.radiobutton\ui1.radiobutton.mak" />
+    <None Include="web1\ui1.refpage\innovaphone.ui1.refpage.js" />
+    <None Include="web1\ui1.refpage\ui1.refpage.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="web1\ui1.refpage\ui1.refpage.mak" />
+    <None Include="web1\ui1.scrolling\innovaphone.ui1.scrolling.js" />
+    <None Include="web1\ui1.scrolling\test.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="web1\ui1.scrolling\ui1.scrolling.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="web1\ui1.scrolling\ui1.scrolling.mak" />
+    <None Include="web1\ui1.svg\innovaphone.ui1.svg.js" />
+    <None Include="web1\ui1.svg\ui1.svg.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="web1\ui1.svg\ui1.svg.mak" />
+    <None Include="web1\ui1.switch\innovaphone.ui1.switch.js" />
+    <None Include="web1\ui1.switch\switch_demo.html" />
+    <None Include="web1\ui1.switch\ui1.switch.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="web1\ui1.switch\ui1.switch.mak" />
+    <None Include="web1\ui1.treeview\innovaphone.ui1.treeview.js" />
+    <None Include="web1\ui1.treeview\ui1.treeview.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="web1\ui1.treeview\ui1.treeview.mak" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="common\build\release.h" />
+    <ClInclude Include="common\ilib\asn1.h" />
+    <ClInclude Include="common\ilib\asn1_ber.h" />
+    <ClInclude Include="common\ilib\asn1_per.h" />
+    <ClInclude Include="common\ilib\base64.h" />
+    <ClInclude Include="common\ilib\btree.h" />
+    <ClInclude Include="common\ilib\cipher.h" />
+    <ClInclude Include="common\ilib\crc.h" />
+    <ClInclude Include="common\ilib\hash.h" />
+    <ClInclude Include="common\ilib\httpfile_api.h" />
+    <ClInclude Include="common\ilib\http_query_args.h" />
+    <ClInclude Include="common\ilib\ilist.h" />
+    <ClInclude Include="common\ilib\ipaddr.h" />
+    <ClInclude Include="common\ilib\json.h" />
+    <ClInclude Include="common\ilib\lib.h" />
+    <ClInclude Include="common\ilib\str.h" />
+    <ClInclude Include="common\ilib\types.h" />
+    <ClInclude Include="common\ilib\uri.h" />
+    <ClInclude Include="common\ilib\xml.h" />
+    <ClInclude Include="common\ilib\zip.h" />
+    <ClInclude Include="lunch\lunch.h" />
+    <ClInclude Include="lunch\lunch_tasks.h" />
+    <ClInclude Include="sdk\common\interface\alarm_client.h" />
+    <ClInclude Include="sdk\common\interface\appsharing.h" />
+    <ClInclude Include="sdk\common\interface\appwebsocket_authenticator.h" />
+    <ClInclude Include="sdk\common\interface\appwebsocket_client.h" />
+    <ClInclude Include="sdk\common\interface\audio.h" />
+    <ClInclude Include="sdk\common\interface\callback.h" />
+    <ClInclude Include="sdk\common\interface\call_kit.h" />
+    <ClInclude Include="sdk\common\interface\certificates.h" />
+    <ClInclude Include="sdk\common\interface\command.h" />
+    <ClInclude Include="sdk\common\interface\database.h" />
+    <ClInclude Include="sdk\common\interface\dbfiles.h" />
+    <ClInclude Include="sdk\common\interface\dns.h" />
+    <ClInclude Include="sdk\common\interface\dtls.h" />
+    <ClInclude Include="sdk\common\interface\environment.h" />
+    <ClInclude Include="sdk\common\interface\ethernet.h" />
+    <ClInclude Include="sdk\common\interface\file.h" />
+    <ClInclude Include="sdk\common\interface\files.h" />
+    <ClInclude Include="sdk\common\interface\full_text_search.h" />
+    <ClInclude Include="sdk\common\interface\guuid.h" />
+    <ClInclude Include="sdk\common\interface\http2_client.h" />
+    <ClInclude Include="sdk\common\interface\httpfile.h" />
+    <ClInclude Include="sdk\common\interface\http_client.h" />
+    <ClInclude Include="sdk\common\interface\ipcmd_if.h" />
+    <ClInclude Include="sdk\common\interface\ipcmd_web.h" />
+    <ClInclude Include="sdk\common\interface\javascript.h" />
+    <ClInclude Include="sdk\common\interface\json_api.h" />
+    <ClInclude Include="sdk\common\interface\jtables.h" />
+    <ClInclude Include="sdk\common\interface\jtables_io.h" />
+    <ClInclude Include="sdk\common\interface\local_storage.h" />
+    <ClInclude Include="sdk\common\interface\media.h" />
+    <ClInclude Include="sdk\common\interface\media_tones.h" />
+    <ClInclude Include="sdk\common\interface\network.h" />
+    <ClInclude Include="sdk\common\interface\notifications-if.h" />
+    <ClInclude Include="sdk\common\interface\pbx.h" />
+    <ClInclude Include="sdk\common\interface\pbx_admin.h" />
+    <ClInclude Include="sdk\common\interface\pdf.h" />
+    <ClInclude Include="sdk\common\interface\process.h" />
+    <ClInclude Include="sdk\common\interface\random.h" />
+    <ClInclude Include="sdk\common\interface\replication.h" />
+    <ClInclude Include="sdk\common\interface\ringer.h" />
+    <ClInclude Include="sdk\common\interface\services.h" />
+    <ClInclude Include="sdk\common\interface\signaling_app.h" />
+    <ClInclude Include="sdk\common\interface\smtp.h" />
+    <ClInclude Include="sdk\common\interface\socket.h" />
+    <ClInclude Include="sdk\common\interface\sql.h" />
+    <ClInclude Include="sdk\common\interface\stask.h" />
+    <ClInclude Include="sdk\common\interface\sysclient.h" />
+    <ClInclude Include="sdk\common\interface\system.h" />
+    <ClInclude Include="sdk\common\interface\task.h" />
+    <ClInclude Include="sdk\common\interface\time.h" />
+    <ClInclude Include="sdk\common\interface\timezone.h" />
+    <ClInclude Include="sdk\common\interface\translation.h" />
+    <ClInclude Include="sdk\common\interface\url_handler.h" />
+    <ClInclude Include="sdk\common\interface\users.h" />
+    <ClInclude Include="sdk\common\interface\valgrind.h" />
+    <ClInclude Include="sdk\common\interface\video_format_conversion.h" />
+    <ClInclude Include="sdk\common\interface\webserver_plugin.h" />
+    <ClInclude Include="sdk\common\interface\websocket_client.h" />
+    <ClInclude Include="sdk\common\interface\worker.h" />
+    <ClInclude Include="sdk\common\interface\zlib_stream.h" />
+    <ClInclude Include="sdk\common\lib\apiwebsocket_client.h" />
+    <ClInclude Include="sdk\common\lib\appservice.h" />
+    <ClInclude Include="sdk\common\lib\appwebsocket.h" />
+    <ClInclude Include="sdk\common\lib\app_updates.h" />
+    <ClInclude Include="sdk\common\lib\asn1_io_buffer.h" />
+    <ClInclude Include="sdk\common\lib\badgecount_signaling.h" />
+    <ClInclude Include="sdk\common\lib\config.h" />
+    <ClInclude Include="sdk\common\lib\database_switch.h" />
+    <ClInclude Include="sdk\common\lib\dns_cache.h" />
+    <ClInclude Include="sdk\common\lib\dns_idna.h" />
+    <ClInclude Include="sdk\common\lib\httpfiles_unzip.h" />
+    <ClInclude Include="sdk\common\lib\httplib.h" />
+    <ClInclude Include="sdk\common\lib\language.h" />
+    <ClInclude Include="sdk\common\lib\tasks_file.h" />
+    <ClInclude Include="sdk\common\lib\tasks_postgresql.h" />
+    <ClInclude Include="sdk\common\lib\tasks_sqlconsole.h" />
+    <ClInclude Include="sdk\common\lib\time_occurrence.h" />
+    <ClInclude Include="sdk\common\lib\transliterator.h" />
+    <ClInclude Include="sdk\common\lib\webdavservice.h" />
+    <ClInclude Include="sdk\common\linux\dns\dns.h" />
+    <ClInclude Include="sdk\common\linux\file\elfheader.h" />
+    <ClInclude Include="sdk\common\linux\file\file.h" />
+    <ClInclude Include="sdk\common\linux\postgresql\psql_database.h" />
+    <ClInclude Include="sdk\common\linux\postgresql\psql_dataset.h" />
+    <ClInclude Include="sdk\common\linux\postgresql\psql_prepared_statement.h" />
+    <ClInclude Include="sdk\common\linux\tcp\tcpsocket.h" />
+    <ClInclude Include="sdk\common\linux\timezone\timezone.h" />
+    <ClInclude Include="sdk\common\linux\timezone\tzfile.h" />
+    <ClInclude Include="sdk\common\linux\uds\udsocket.h" />
+    <ClInclude Include="sdk\common\os\debug.h" />
+    <ClInclude Include="sdk\common\os\iomux.h" />
+    <ClInclude Include="sdk\common\service\http_client\http_client.h" />
+    <ClInclude Include="sdk\common\service\http_client\ntlm.h" />
+    <ClInclude Include="sdk\common\service\openssl_shared\ssl.h" />
+    <ClInclude Include="sdk\common\service\smtp\smtp_service.h" />
+    <ClInclude Include="sdk\common\service\tls\tlssocket.h" />
+    <ClInclude Include="sdk\common\service\webserverplugin\webserver_copy_handler.h" />
+    <ClInclude Include="sdk\common\service\webserverplugin\webserver_delete_handler.h" />
+    <ClInclude Include="sdk\common\service\webserverplugin\webserver_get_handler.h" />
+    <ClInclude Include="sdk\common\service\webserverplugin\webserver_lock_handler.h" />
+    <ClInclude Include="sdk\common\service\webserverplugin\webserver_message_handler.h" />
+    <ClInclude Include="sdk\common\service\webserverplugin\webserver_mkcol_handler.h" />
+    <ClInclude Include="sdk\common\service\webserverplugin\webserver_move_handler.h" />
+    <ClInclude Include="sdk\common\service\webserverplugin\webserver_options_handler.h" />
+    <ClInclude Include="sdk\common\service\webserverplugin\webserver_passthrough_handler.h" />
+    <ClInclude Include="sdk\common\service\webserverplugin\webserver_plugin.h" />
+    <ClInclude Include="sdk\common\service\webserverplugin\webserver_post_handler.h" />
+    <ClInclude Include="sdk\common\service\webserverplugin\webserver_propfind_handler.h" />
+    <ClInclude Include="sdk\common\service\webserverplugin\webserver_proppatch_handler.h" />
+    <ClInclude Include="sdk\common\service\webserverplugin\webserver_put_handler.h" />
+    <ClInclude Include="sdk\common\service\webserverplugin\webserver_registered_path.h" />
+    <ClInclude Include="sdk\common\service\webserverplugin\webserver_set_certificate_handler.h" />
+    <ClInclude Include="sdk\common\service\webserverplugin\webserver_static_file.h" />
+    <ClInclude Include="sdk\common\service\webserverplugin\webserver_unlock_handler.h" />
+    <ClInclude Include="sdk\common\service\webserverplugin\webserver_webdav_message_handler.h" />
+    <ClInclude Include="sdk\common\service\webserverplugin\webserver_websocket_handler.h" />
+    <ClInclude Include="sdk\common\service\webserver_shared\webserver_internal.h" />
+    <ClInclude Include="sdk\common\service\webserver_shared\webserver_message.h" />
+    <ClInclude Include="sdk\platform\platform.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="lunch\apps\innovaphone-lunch.png" />
+    <Image Include="lunch\apps\innovaphone-lunchAdmin.png" />
+    <Image Include="lunch\lunch.png" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{e0104876-bab2-4678-bf5b-ba325726d66e}</ProjectGuid>
+    <Keyword>MakeFileProj</Keyword>
+    <LinuxProjectType>{FC1A4D80-50E9-41DA-9192-61C0DBAA00D2}</LinuxProjectType>
+    <SccProjectName>lunch</SccProjectName>
+    <SccAuxPath>https://vault.innovaphone.com/VaultService</SccAuxPath>
+    <SccLocalPath>5~cee3f1c3-6458-4830-96fb-728c05908862</SccLocalPath>
+    <SccProvider>SourceGear Vault Visual Studio 2005 Client:{1EA47954-8515-402d-82D9-B5C332120A8D}</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ShowAllFiles>true</ShowAllFiles>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='arm64|Win32'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='arm64-debug|Win32'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='arm|Win32'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='x86_64|Win32'">
+    <PlatformToolset>v120</PlatformToolset>
+    <ConfigurationType>Makefile</ConfigurationType>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='x86_64-debug|Win32'" Label="Configuration">
+    <PlatformToolset>v120</PlatformToolset>
+    <ConfigurationType>Makefile</ConfigurationType>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='arm-debug|Win32'" Label="Configuration">
+    <PlatformToolset>v120</PlatformToolset>
+    <ConfigurationType>Makefile</ConfigurationType>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='arm64|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='arm64-debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='arm|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='arm64|Win32'">
+    <NMakeOutput>$(ProjectDir)lunch-arm64-debug.vgdbsettings</NMakeOutput>
+    <NMakePreprocessorDefinitions>WIN32;NDEBUG;$(NMakePreprocessorDefinitions)</NMakePreprocessorDefinitions>
+    <ExecutablePath>$(T)\app-platform-buildtls;$(T)\aarch64-14.2.0-linux-gnu\bin;$(ExecutablePath)</ExecutablePath>
+    <NMakeBuildCommandLine>call common/build/buildnum lunch.mak arm64</NMakeBuildCommandLine>
+    <IncludePath>.;sdk\platform;sdk;common\lap;$(T)\aarch64-14.2.0-linux-gnu\aarch64-linux-gnu\include\c++\14.2.0;$(T)\app-platform-libs\12\arm64\usr\include;$(T)\app-platform-libs\12\arm64\usr\include\postgresql;$(T)\aarch64-14.2.0-linux-gnu\lib\gcc\aarch64-linux-gnu\14.2.0\include;$(T)\aarch64-14.2.0-linux-gnu\aarch64-linux-gnu\include\c++\14.2.0\aarch64-linux-gnu</IncludePath>
+    <NMakeReBuildCommandLine />
+    <NMakeCleanCommandLine>make -j %NUMBER_OF_PROCESSORS% -f lunch.mak clean-arm64</NMakeCleanCommandLine>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='arm64-debug|Win32'">
+    <NMakeOutput>$(ProjectDir)lunch-arm64-debug.vgdbsettings</NMakeOutput>
+    <NMakePreprocessorDefinitions>WIN32;NDEBUG;$(NMakePreprocessorDefinitions)</NMakePreprocessorDefinitions>
+    <ExecutablePath>$(T)\app-platform-buildtls;$(T)\aarch64-14.2.0-linux-gnu\bin;$(ExecutablePath)</ExecutablePath>
+    <NMakeBuildCommandLine>"$(VISUALGDB_DIR)\VisualGDB.exe" /build "$(ProjectPath)" "/solution:$(SolutionPath)" "/config:$(Configuration)" "/platform:$(Platform)"</NMakeBuildCommandLine>
+    <IncludePath>.;sdk\platform;sdk;common\lap;$(T)\aarch64-14.2.0-linux-gnu\aarch64-linux-gnu\include\c++\14.2.0;$(T)\app-platform-libs\12\arm64\usr\include;$(T)\app-platform-libs\12\arm64\usr\include\postgresql;$(T)\aarch64-14.2.0-linux-gnu\lib\gcc\aarch64-linux-gnu\14.2.0\include;$(T)\aarch64-14.2.0-linux-gnu\aarch64-linux-gnu\include\c++\14.2.0\aarch64-linux-gnu</IncludePath>
+    <NMakeReBuildCommandLine>"$(VISUALGDB_DIR)\VisualGDB.exe" /rebuild "$(ProjectPath)" "/solution:$(SolutionPath)" "/config:$(Configuration)" "/platform:$(Platform)"</NMakeReBuildCommandLine>
+    <NMakeCleanCommandLine>"$(VISUALGDB_DIR)\VisualGDB.exe" /clean "$(ProjectPath)" "/solution:$(SolutionPath)" "/config:$(Configuration)" "/platform:$(Platform)"</NMakeCleanCommandLine>
+    <NMakeForcedIncludes>$(ProjectDir)\gcc_arm64-debug.h;$(VISUALGDB_DIR)\gcc_compat.h;$(NMakeForcedIncludes)</NMakeForcedIncludes>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='arm|Win32'">
+    <NMakeOutput>lunch.exe</NMakeOutput>
+    <NMakePreprocessorDefinitions>WIN32;NDEBUG;$(NMakePreprocessorDefinitions)</NMakePreprocessorDefinitions>
+    <ExecutablePath>$(T)\app-platform-buildtls;$(T)\arm-14.2.0-linux-gnu\bin;$(ExecutablePath)</ExecutablePath>
+    <NMakeBuildCommandLine>call common/build/buildnum lunch.mak arm</NMakeBuildCommandLine>
+    <IncludePath>.;sdk\platform;sdk;common\lap;$(T)\arm-14.2.0-linux-gnu\arm-linux-gnueabi\include\c++\14.2.0;$(T)\app-platform-libs\12\armel\usr\include;$(T)\app-platform-libs\12\armel\usr\include\postgresql;$(T)\arm-14.2.0-linux-gnu\lib\gcc\arm-linux-gnueabi\14.2.0\include;$(T)\arm-14.2.0-linux-gnu\arm-linux-gnueabi\include\c++\14.2.0\arm-linux-gnueabi</IncludePath>
+    <NMakeReBuildCommandLine>
+    </NMakeReBuildCommandLine>
+    <NMakeCleanCommandLine>make -f lunch.mak clean-arm</NMakeCleanCommandLine>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='x86_64|Win32'">
+    <ExecutablePath>$(T)\app-platform-buildtls;$(T)\x86_64-14.2.0-linux-gnu\bin;$(ExecutablePath)</ExecutablePath>
+    <IncludePath>.;sdk\platform;sdk;common\lap;$(T)\x86_64-14.2.0-linux-gnu\x86_64-linux-gnu\include\c++\14.2.0;$(T)\app-platform-libs\12\x86_64\usr\include;$(T)\app-platform-libs\12\x86_64\usr\include\postgresql;$(T)\x86_64-14.2.0-linux-gnu\lib\gcc\x86_64-linux-gnu\14.2.0\include;$(T)\x86_64-14.2.0-linux-gnu\x86_64-linux-gnu\include\c++\14.2.0\x86_64-linux-gnu</IncludePath>
+    <ReferencePath />
+    <LibraryPath />
+    <LibraryWPath />
+    <NMakeBuildCommandLine>make -j %NUMBER_OF_PROCESSORS% -f lunch.mak x86_64</NMakeBuildCommandLine>
+    <NMakeCleanCommandLine>make -f lunch.mak clean-x86_64</NMakeCleanCommandLine>
+    <NMakeIncludeSearchPath>.;$(ProjectDir)</NMakeIncludeSearchPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='x86_64-debug|Win32'">
+    <ExecutablePath>$(T)\app-platform-buildtls;$(T)\x86_64-14.2.0-linux-gnu\bin;$(ExecutablePath)</ExecutablePath>
+    <IncludePath>.;sdk\platform;sdk;common\lap;$(T)\x86_64-14.2.0-linux-gnu\x86_64-linux-gnu\include\c++\14.2.0;$(T)\app-platform-libs\12\x86_64\usr\include;$(T)\app-platform-libs\12\x86_64\usr\include\postgresql;$(T)\x86_64-14.2.0-linux-gnu\lib\gcc\x86_64-linux-gnu\14.2.0\include;$(T)\x86_64-14.2.0-linux-gnu\x86_64-linux-gnu\include\c++\14.2.0\x86_64-linux-gnu</IncludePath>
+    <ReferencePath />
+    <LibraryPath />
+    <LibraryWPath />
+    <NMakeBuildCommandLine>"$(VISUALGDB_DIR)\VisualGDB.exe" /build "$(ProjectPath)" "/solution:$(SolutionPath)" "/config:$(Configuration)" "/platform:$(Platform)"</NMakeBuildCommandLine>
+    <NMakeCleanCommandLine>"$(VISUALGDB_DIR)\VisualGDB.exe" /clean "$(ProjectPath)" "/solution:$(SolutionPath)" "/config:$(Configuration)" "/platform:$(Platform)"</NMakeCleanCommandLine>
+    <NMakeOutput>$(ProjectDir)lunch-x86_64-debug.vgdbsettings</NMakeOutput>
+    <NMakeReBuildCommandLine>"$(VISUALGDB_DIR)\VisualGDB.exe" /rebuild "$(ProjectPath)" "/solution:$(SolutionPath)" "/config:$(Configuration)" "/platform:$(Platform)"</NMakeReBuildCommandLine>
+    <NMakeIncludeSearchPath>
+    </NMakeIncludeSearchPath>
+    <NMakeForcedIncludes>$(ProjectDir)\gcc_x86_64-debug.h;$(VISUALGDB_DIR)\gcc_compat.h;$(NMakeForcedIncludes)</NMakeForcedIncludes>
+    <NMakePreprocessorDefinitions>__VisualGDB_CFG_x86_64_debug;$(NMakePreprocessorDefinitions)</NMakePreprocessorDefinitions>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='arm-debug|Win32'">
+    <ExecutablePath>$(T)\app-platform-buildtls;$(T)\arm-14.2.0-linux-gnu\bin;$(ExecutablePath)</ExecutablePath>
+    <IncludePath>.;sdk\platform;sdk;common\lap;$(T)\arm-14.2.0-linux-gnu\arm-linux-gnueabi\include\c++\14.2.0;$(T)\app-platform-libs\12\armel\usr\include;$(T)\app-platform-libs\12\armel\usr\include\postgresql;$(T)\arm-14.2.0-linux-gnu\lib\gcc\arm-linux-gnueabi\14.2.0\include;$(T)\arm-14.2.0-linux-gnu\arm-linux-gnueabi\include\c++\14.2.0\arm-linux-gnueabi</IncludePath>
+    <ReferencePath />
+    <LibraryPath />
+    <LibraryWPath />
+    <NMakeBuildCommandLine>"$(VISUALGDB_DIR)\VisualGDB.exe" /build "$(ProjectPath)" "/solution:$(SolutionPath)" "/config:$(Configuration)" "/platform:$(Platform)"</NMakeBuildCommandLine>
+    <NMakeCleanCommandLine>"$(VISUALGDB_DIR)\VisualGDB.exe" /clean "$(ProjectPath)" "/solution:$(SolutionPath)" "/config:$(Configuration)" "/platform:$(Platform)"</NMakeCleanCommandLine>
+    <NMakeOutput>$(ProjectDir)lunch-arm-debug.vgdbsettings</NMakeOutput>
+    <NMakeReBuildCommandLine>"$(VISUALGDB_DIR)\VisualGDB.exe" /rebuild "$(ProjectPath)" "/solution:$(SolutionPath)" "/config:$(Configuration)" "/platform:$(Platform)"</NMakeReBuildCommandLine>
+    <NMakeIncludeSearchPath />
+    <NMakeForcedIncludes>$(ProjectDir)\gcc_arm-debug.h;$(VISUALGDB_DIR)\gcc_compat.h;$(NMakeForcedIncludes)</NMakeForcedIncludes>
+    <NMakePreprocessorDefinitions>__VisualGDB_CFG_arm_debug;$(NMakePreprocessorDefinitions)</NMakePreprocessorDefinitions>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='x86_64|Win32'">
+    <BuildLog>
+      <Path>$(Configuration)\build.log</Path>
+    </BuildLog>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='x86_64-debug|Win32'">
+    <BuildLog>
+      <Path>$(Configuration)\build.log</Path>
+    </BuildLog>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='arm-debug|Win32'">
+    <BuildLog>
+      <Path>$(Configuration)\build.log</Path>
+    </BuildLog>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='arm64|Win32'">
+    <BuildLog>
+      <Path>$(Configuration)\build.log</Path>
+    </BuildLog>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='arm64-debug|Win32'">
+    <BuildLog>
+      <Path>$(Configuration)\build.log</Path>
+    </BuildLog>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='arm|Win32'">
+    <BuildLog>
+      <Path>$(Configuration)\build.log</Path>
+    </BuildLog>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
