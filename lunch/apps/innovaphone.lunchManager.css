@@ -1,0 +1,95 @@
+
+div.innovaphone-lunch-panel {
+    position:absolute;
+    left:0px;
+    right:0px;
+    top:0px;
+    bottom:0px;
+    color:var(--innovaphone-lunch-item-text);
+    font-size:14px;
+}
+
+div.innovaphone-lunch-obj {
+    position:relative;
+    margin:10px;
+    padding:5px;
+    background-color:var(--innovaphone-lunch-item);
+    color:var(--innovaphone-lunch-item-text);
+    font-size:14px;
+}
+
+div.innovaphone-lunch-header {
+    position:relative;
+    display:flex;
+    flex-wrap:wrap;
+}
+
+div.innovaphone-lunch-label {
+    position:relative;
+    margin:5px 10px;
+    color:var(--innovaphone-lunch-c2);
+}
+
+div.innovaphone-lunch-label2 {
+    position:relative;
+    width:100px;
+    margin:5px 10px;
+    font-size: 15px;
+    text-align: left;
+    color: var(--innovaphone-users-item-text);
+}
+
+div.innovaphone-lunch-value {
+    position:relative;
+    margin:5px 0px;
+    /*background-color:var(--innovaphone-lunch-input);*/
+    color:var(--innovaphone-lunch-input-text);
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
+}
+
+div.innovaphone-lunch-appicon {
+    background-size: cover;
+    position: absolute;
+    height: 50px;
+    left: 0px;
+    top: 0px;
+    width: 50px;
+}
+
+div.innovaphone-lunch-button {
+    position:absolute;
+    width:120px;
+    height:25px;
+    background-color:var(--innovaphone-lunch-button);
+    color:var(--innovaphone-lunch-button-text);
+    text-align:center;
+    cursor:pointer;
+}
+
+input.innovaphone-lunch-input {
+    width:100%;
+    box-sizing:border-box;
+    border:none;
+    margin:5px 0px;
+    padding: 5px 10px;
+    background-color:var(--innovaphone-lunch-input);
+    color:var(--innovaphone-lunch-input-text);
+}
+
+div.innovaphone-lunch-choice {
+    box-sizing: border-box;
+    position:relative;
+    width:120px;
+    height:30px;
+    text-align:center;
+    background-color:var(--innovaphone-lunch-button-bg);
+    margin:10px;
+    padding: 5px;
+}
+
+div.innovaphone-lunch-choice:hover {
+    background-color:var(--innovaphone-lunch-highlight-bg);
+}
+

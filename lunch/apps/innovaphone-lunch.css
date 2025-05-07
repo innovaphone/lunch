@@ -1,0 +1,168 @@
+div::-webkit-scrollbar {
+    width: 9px;
+    height: 9px;
+}
+
+div::-webkit-scrollbar-thumb {
+    background-color: var(--accent);
+}
+
+body {
+    background-color:var(--bg1);
+    color:var(--c1);
+}
+
+input:not([type]), input[type='text'], input[type='password'], input[type='email'], input[type='number'], input[type='url'], input[type='date'], input[type='time'], input[type='search'] {
+    height: 30px;
+    font-size: 14px;
+    color: var(--c1);
+    background-color: var(--forms);
+    border-style: none;
+    padding: 0 10px 0 10px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+input.button {
+    color: var(--c1);
+    background-color: var(--button-bg1);
+    outline: none;
+    box-shadow: none;
+    transition: color 1s, border 1s;
+    border: solid 1px var(--c2);
+}
+
+input.button-cancel {
+    background-color: var(--bg-cancel);
+}
+
+input.button:hover {
+    background-color: var(--highlight-bg);
+}
+
+input.button:active {
+    background-color: var(--active-bg);
+}
+
+input.button-disabled {
+    color: var(--c1);
+    background-color: var(--button-bg1);
+    opacity: 0.4;
+    outline: none;
+    border: none;
+    box-shadow: none;
+}
+
+.link {
+    color: var(--accent);
+    font-size: 16px;
+    cursor: pointer;
+}
+
+h1 {
+    font-size: 18px;
+    font-weight: normal;
+    margin: 20px;
+    margin-bottom: 10px;
+    padding: 0;
+    flex: 0 0 auto;
+}
+
+.info-text {
+    flex: 1 1 auto;
+    font-size: 14px;
+    color: var(--c2);
+    white-space: normal;
+    word-break: keep-all;
+    margin: 10px 20px;
+}
+
+.popup {
+    flex: 0 1 300px;
+    background-color: var(--bg3);
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(40, 40, 40, 0.5);
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 50px 20px 20px;
+}
+
+.btn-cont {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    padding: 5px 10px 15px 10px;
+}
+
+button {
+    color: var(--c1);
+    border: none;
+    box-shadow: none;
+    flex: 0 0 40px;
+    min-height: 40px;
+    background-color: var(--button-bg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    padding: 0 15px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+button:hover, .button-row:hover {
+    background-color: var(--highlight-bg);
+}
+
+.button-row {
+    flex: 1 1 auto;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    padding: 0 20px;
+    margin: 5px 10px 5px 10px;
+}
+
+
+.button-red {
+    background-color: var(--red);
+}
+
+.button-red:hover {
+    background-color: #ff6d88;
+}
+
+.button-green {
+    background-color: var(--green);
+}
+
+.button-green:hover {
+    background-color: #9bd48a;
+}
+
+div.confirmation-container {
+    flex: 0 1 300px;
+    margin-top: 30px;
+    position: relative;
+    height: 150px;
+    background-color: var(--bg3);
+    color: var(--c1);
+    font-size: 16px;
+}
+
+div.day-node {
+    border: solid 1px var(--c2);
+    padding: 5px;
+}
