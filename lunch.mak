@@ -5,6 +5,8 @@
 
 OUT = lunch
 
+MANUFACTURER = "CommunityLab"
+
 include common/build/build.mak
 
 include sdk/platform/sdk-defs.mak
