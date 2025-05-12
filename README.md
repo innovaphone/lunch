@@ -20,3 +20,6 @@ To compile an own binary out of this code, you would need to:
 - create a new innovaphone C++ application
 - copy & paste the code with needed modifications 
 
+## Concept article
+
+https://wiki.innovaphone.com/index.php?title=Reference15r1:Concept_App_Service_Lunch_App
