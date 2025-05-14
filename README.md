@@ -2,6 +2,8 @@
 
 This project is a **simple Lunch App** for use with the **myApps** environment.
 
+The app was developed rather quickly so that innovaphone would have a solution for its own cafeteria. As a result, there is very little flexibility, and the app is therefore unlikely to be suitable for many other companies and their cafeterias.
+
 ## 🔍 Purpose
 
 You may use the code to build your own modified Lunch App with small modifications if needed.
